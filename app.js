@@ -15,7 +15,7 @@ app.post('/trigger-workflow', async (req, res) => {
 
         // Trigger the n8n workflow
         const response = await axios.post(
-            `${N8N_BASE_URL}/webhook/${workflowId}`,
+            `${N8N_BASE_URL}/webhook-test/${workflowId}`,
             data
         )
 
